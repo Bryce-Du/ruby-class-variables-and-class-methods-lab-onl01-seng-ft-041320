@@ -34,10 +34,10 @@ class Song
       if genre_hash.keys.include?(genre)
         genre_hash[genre] += 1 
       else
-        new genre = {genre => 1}
-        genre_hash 
+        genre_hash[genre] = 1
       end
     end
+    genre_hash
   end
   
 end
